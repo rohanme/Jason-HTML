@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Donation Form</title>
+</head>
+<body>
+
+    <h1>Library Book Donation</h1>
+    <p>Please fill out this form to donate your books to our library.</p>
+    <hr>
+
+    <form>
+        <fieldset>
+            <legend>Donor Details</legend>
+            
+            <label for="donorName">Donor Name:</label>
+            <input type="text" id="donorName" name="donorName"><br><br>
+            
+            <label for="donorID">Donor ID:</label>
+            <input type="password" id="donorID" name="donorID"><br><br>
+            
+            <label for="donationDate">Donation Date:</label>
+            <input type="date" id="donationDate" name="donationDate">
+        </fieldset>
+
+        <br>
+
+        
+        <fieldset>
+            <legend>Book Details</legend>
+            
+            <label for="category">Book Category:</label>
+            <select id="category" name="category">
+                <option value="">Select a category</option>
+                <option value="fiction">Fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="education">Education</option>
+            </select>
+            
+            <p>Book Condition:</p>
+            <input type="radio" id="likeNew" name="condition" value="Like New">
+            <label for="likeNew">Like New</label><br>
+            
+            <input type="radio" id="good" name="condition" value="Good">
+            <label for="good">Good</label><br>
+            
+            <input type="radio" id="used" name="condition" value="Used">
+            <label for="used">Used</label><br><br>
+            
+            <label for="notes">Notes (Book title, author name, or extra note):</label><br>
+            <textarea id="notes" name="notes" placeholder="Enter book title, author, or notes here..."></textarea>
+        </fieldset>
+
+        <br>
+
+        
+        <fieldset>
+            <legend>Preferred Drop-Off Day</legend>
+            <p>Choose one or more days:</p>
+            
+            <input type="checkbox" id="monday" name="dropoff" value="Monday">
+            <label for="monday">Monday</label><br>
+            
+            <input type="checkbox" id="wednesday" name="dropoff" value="Wednesday">
+            <label for="wednesday">Wednesday</label><br>
+            
+            <input type="checkbox" id="friday" name="dropoff" value="Friday">
+            <label for="friday">Friday</label>
+        </fieldset>
+
+        <br>
+
+       
+        <input type="submit" value="Donate My Book">
+    </form>
+
+</body>
+</html>
