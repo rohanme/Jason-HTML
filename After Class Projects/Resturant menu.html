@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            letter-spacing: 0.5px;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .menu-card {
+            width: 480px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            box-shadow: 3px 3px 15px rgba(0,0,0,0.2);
+        }
+
+        .restaurant-name {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 3px #bbbbbb;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            font-style: italic;
+            letter-spacing: 1px;
+            text-decoration: underline;
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        .menu-section {
+            margin-bottom: 25px;
+            padding: 15px;
+            box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-decoration: overline;
+            text-transform: capitalize;
+            margin-top: 0;
+        }
+
+        .dish-group {
+            margin-bottom: 15px;
+        }
+
+        .dish-name {
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            text-transform: capitalize;
+            display: inline-block;
+            transition: 0.2s;
+        }
+
+        .dish-name:hover {
+            transform: scale(1.1);
+        }
+
+        .dish-description {
+            font-size: 14px;
+            text-indent: 30px;
+            margin-top: 5px;
+            margin-bottom: 0;
+        }
+
+        .special-offer-banner {
+            padding: 15px;
+            background-color: #ff4444;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 2px black;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            transform: rotate(-2deg);
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-card">
+        <div class="restaurant-name">The Saffron Cask</div>
+        <p class="tagline">Elevated heritage regional Indian plates and custom spice blends</p>
+
+        <div class="menu-section">
+            <h2 class="section-title">starters</h2>
+            <div class="dish-group">
+                <span class="dish-name">mango habanero paneer tikka</span>
+                <p class="dish-description">Clay-oven roasted cottage cheese skewers glazed with a sweet and spicy green mango emulsion.</p>
+            </div>
+            <div class="dish-group">
+                <span class="dish-name">avocado bhel puri</span>
+                <p class="dish-description">Crispy puffed rice tossed with ripe Hass avocado cubes, tangy tamarind drizzle, and fresh mint chutney.</p>
+            </div>
+            <div class="dish-group">
+                <span class="dish-name">truffle malai broccoli</span>
+                <p class="dish-description">Charred broccoli florets marinated in a creamy green cardamom cheese paste and finished with truffle oil.</p>
+            </div>
+            <div class="dish-group">
+                <span class="dish-name">beetroot lamb cutlets</span>
+                <p class="dish-description">Pan-seared minced lamb patties infused with grated organic beetroot and aromatic toasted fennel seeds.</p>
+            </div>
+            <div class="dish-group">
+                <span class="dish-name">amritsari fish goujons</span>
+                <p class="dish-description">Crispy gram-flour battered catfish strips seasoned with carom seeds and a heavy dusting of chaat masala.</p>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2 class="section-title">main courses</h2>
+            <div class="dish-group">
+                <span class="dish-name">smoked jackfruit biryani</span>
+                <p class="dish-description">Fragrant aged basmati rice slow-cooked with tandoori jackfruit, saffron strands, and caramelized onions.</p>
+            </div>
+            <div class="dish-group">
+                <span class="dish-name">pistachio chicken korma</span>
+                <p class="dish-description">Tender chicken pieces simmered gently in a velvety, rich sauce crafted from ground pistachios and mild white spices.</p>
+            </div>
+            <div class="dish-group">
+                <span class="dish-name">goan prawn caldine</span>
+                <p class="dish-description">Juicy tiger prawns simmered in a smooth yellow coconut curry spiced with cumin and a touch of toddy vinegar.</p>
+            </div>
+            <div class="dish-group">
+                <span class="dish-name">fig and walnut kofta</span>
+                <p class="dish-description">Delicate paneer dumplings stuffed with dried wild figs and walnuts, swimming in an aromatic tomato-honey gravy.</p>
+            </div>
+            <div class="dish-group">
+                <span class="dish-name">kashmiri lamb rogan josh</span>
+                <p class="dish-description">Slow-braised tender lamb shoulder cooked cooked with traditional kashmiri chilies and whole aromatic spices.</p>
+            </div>
+        </div>
+
+        <div class="special-offer-banner">
+            receive a complimentary hot garlic naan basket with any main course order!
+        </div>
+    </div>
+
+</body>
+</html>
