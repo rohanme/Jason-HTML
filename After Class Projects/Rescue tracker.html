@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MY ZOO TRACKER WEBSITE</title>
+  <style>
+    body {
+      font-family: "Courier New", Monaco, monospace;
+      background-color: #e0f7fa;
+      padding: 20px;
+      padding-top: 90px;
+      min-height: 2000px;
+    }
+
+    h1 {
+      color: #004d40;
+      text-align: center;
+      background-color: #b2dfdb;
+      border: 4px ridge #004d40;
+      padding: 10px;
+    }
+
+    h2 {
+      color: #00796b;
+      background: white;
+      display: inline-block;
+      padding: 5px;
+      border: 1px dashed black;
+    }
+
+    .top-banner-alert {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      background-color: #ff1744;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      border-bottom: 5px solid black;
+    }
+
+    .animal-box {
+      background-color: #ffffff;
+      border: 3px solid #004d40;
+      padding: 15px;
+      margin: 15px 0px;
+      width: 320px;
+    }
+
+    .move-this-one {
+      position: relative;
+      left: 35px;
+      background-color: #ffe082;
+      border: 3px dashed #ffb300;
+    }
+
+    .panda-box-container {
+      position: relative;
+      background-color: #ffffff;
+      border: 4px double #333;
+      padding: 25px;
+      width: 300px;
+      margin: 30px 0px;
+    }
+
+    .corner-tag-absolute {
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      background-color: #ff9100;
+      color: black;
+      padding: 8px;
+      font-weight: bold;
+      border: 2px solid black;
+    }
+
+    .sticky-bar-middle {
+      position: sticky;
+      top: 60px;
+      background-color: #651fff;
+      color: white;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      margin: 40px 0px;
+    }
+
+    .log-sheet {
+      background: #fff;
+      border: 2px solid #651fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      width: 450px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-banner-alert">
+    🚨 ZOO SYSTEM ANNOUNCEMENT: ALL GATES ARE CURRENTLY LOCKED!! 🚨
+  </div>
+
+  <h1>MAIN ZOO DATABASE TERMINAL</h1>
+
+  <h2>ANIMALS LIST (STATIC)</h2>
+  
+  <div class="animal-box">
+    <b>Name:</b> Brutus the Lion<br>
+    <b>Age:</b> 8 Years Old<br>
+    <b>Status:</b> Sleeping under the big oak tree right now. Do not disturb him.
+  </div>
+
+  <div class="animal-box">
+    <b>Name:</b> Ellie the Elephant<br>
+    <b>Age:</b> 14 Years Old<br>
+    <b>Status:</b> Just finished splashing in the mud pool. Needs a water refill soon.
+  </div>
+
+  <div class="animal-box">
+    <b>Name:</b> Pippin the Meerkat<br>
+    <b>Age:</b> 2 Years Old<br>
+    <b>Status:</b> Standing guard on the rock looking for hawks. Very alert.
+  </div>
+
+
+  <h2>QUARANTINE ENCLOSURES (RELATIVE)</h2>
+
+  <div class="animal-box">
+    <b>Name:</b> Koala A (Barnaby)<br>
+    <b>Location:</b> Room 1<br>
+    <b>Note:</b> Ate all his eucalyptus leaves this morning.
+  </div>
+
+  <div class="animal-box move-this-one">
+    <b>Name:</b> Koala B (Pip)<br>
+    <b>Location:</b> Room 2<br>
+    <b>Note:</b> Shifting this container over so the doctor can get the medical cart inside!
+  </div>
+
+  <div class="animal-box">
+    <b>Name:</b> Koala C (Moose)<br>
+    <b>Location:</b> Room 3<br>
+    <b>Note:</b> Fast asleep on the branch.
+  </div>
+
+
+  <h2>URGENT MEDICAL TASKS (ABSOLUTE)</h2>
+
+  <div class="panda-box-container">
+    <div class="corner-tag-absolute">DONE ✅</div>
+    <h3>Giant Panda #1</h3>
+    <p><b>Diet Check:</b> 20kg of fresh bamboo delivered.</p>
+    <p><b>Vitals:</b> Perfect heart rate.</p>
+  </div>
+
+  <div class="panda-box-container">
+    <div class="corner-tag-absolute" style="background-color: red; color: white;">NEED HELP!</div>
+    <h3>Giant Panda #2</h3>
+    <p><b>Diet Check:</b> Refusing to eat his vitamin biscuits.</p>
+    <p><b>Vitals:</b> Temperature is a little bit warm.</p>
+  </div>
+
+
+  <div class="sticky-bar-middle">
+    ⬇️ END OF DAY FEEDING LOGS (SCROLL DOWN TO REFRESH) ⬇️
+  </div>
+
+
+  <h2>HOURLY ZOO KEEPER ENTRIES</h2>
+
+  <div class="log-sheet">
+    <h3>08:00 AM Update</h3>
+    <p>Arrived at the park. Fed the penguins their buckets of fish. The water filter is working fine but making a weird clicking noise.</p>
+  </div>
+
+  <div class="log-sheet">
+    <h3>10:30 AM Update</h3>
+    <p>Cleaned out the turtle habitat. One of the baby turtles tried to bite my boot. Checked the locks on the reptile cages twice.</p>
+  </div>
+
+  <div class="log-sheet">
+    <h3>01:00 PM Update</h3>
+    <p>Lunch break finished. Delivered fresh meat piles to the tiger sector. They were waiting by the gate and roaring loud.</p>
+  </div>
+
+  <div class="log-sheet">
+    <h3>03:30 PM Update</h3>
+    <p>The ice cream machine near the monkey cages broke down. Called the repair guy. Monkeys are throwing twigs at the tourists again.</p>
+  </div>
+
+  <div class="log-sheet">
+    <h3>05:00 PM Update</h3>
+    <p>Sun is setting. Moving the tropical birds into the indoor heated enclosures for the night. System checks all green.</p>
+  </div>
+
+</body>
+</html>
