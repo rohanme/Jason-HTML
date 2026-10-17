@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Study Progress Dashboard</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Mimics the structure of your original reference code exactly, but swaps colors/fonts for a slightly clumsy newbie look */
+    body { background-color: #fcf8f2; font-family: "Comic Sans MS", cursive, sans-serif; }
+    .jumbotron { background-color: #f0e6ff; border-left: 6px solid #8e24aa; }
+    .jumbotron h1 { color: #8e24aa; }
+    .section-title { color: #8e24aa; margin-top: 30px; margin-bottom: 15px; }
+    p { font-weight: bold; margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+
+  
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1>My Study Progress Dashboard</h1>
+      <p class="lead">Track your subjects, completed lessons, and learning progress in one place.</p>
+
+     
+      <button class="btn btn-danger">Coding</button>
+      <button class="btn btn-warning">English</button>
+      <button class="btn btn-primary">Math</button>
+      <button class="btn btn-success">Science</button>
+    </div>
+  </div>
+
+  <div class="container">
+
+   
+    <h2 class="section-title">Lessons Completed <span class="badge badge-warning text-dark">17</span></h2>
+
+    <p>Coding <span class="badge badge-danger">6 lessons</span></p>
+    <p>English <span class="badge badge-warning text-dark">4 lessons</span></p>
+    <p>Math <span class="badge badge-primary">4 lessons</span></p>
+    <p>Science <span class="badge badge-success">3 lessons</span></p>
+
+    
+    <h2 class="section-title">Subject Progress</h2>
+
+    <p>Coding</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-danger" style="width: 55%">55%</div>
+    </div>
+
+    <p>English</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-warning text-dark" style="width: 45%">40%</div>
+    </div>
+
+    <p>Math</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-primary" style="width: 35%">35%</div>
+    </div>
+
+    <p>Science</p>
+    <div class="progress mb-3">
+      <div class="progress-bar bg-success" style="width: 20%">25%</div>
+    </div>
+
+  </div>
+
+</body>
+</html>
