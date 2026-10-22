@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My animal safari</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+            body {
+                Background-color:lightgreen;
+                position: relative;
+
+            }
+            .safari-slide {
+            height: 200px;
+            text-align:center;
+            padding-top:75px;
+        font-size:30px;
+        color:white;
+
+            }
+.slide-forest {
+background-color:darkgreen;
+
+
+}
+.slide-ocean {
+    background-color:lightblue;
+
+}    
+.slide-desert z{
+    background-color: beige;
+
+
+}            
+        </style>
+    </head>
+
+    <body>
+        <div id="safari-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#safari-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#safari-carousel" data-slide-to="1"></li>
+                <li data-target="#safari-carousel" data-slide-to="2"></li>
+               
+            </ol>
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active safari-slide slide-forest">Forest Safari!</div>
+                <div class="carousel-item safari-slide slide-desert">Desert Safari!</div>
+               <div class="carousel-item safari-slide slide-ocean">ocean Safari!</div>
+            </div>
+            <a class="carousel-control-prev" href="#safari-carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+           
+
+            <a class="carousel-control-next" href="#safari-carousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span></a>
+
+        </div>            
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+               <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        </body>
+            </html>    
