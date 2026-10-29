@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>
+            Functions!
+         </title>
+    </head>
+    <body>
+        <p id="result"></p>
+        <button onclick="addition(5,8)">Click Me!</button>
+        <script>
+            function addition(a,b)
+            {
+                if(b===undefined)
+            {
+                b=0;
+            }
+                var sum=a+b;
+                document.getElementById("result").innerHTML= sum;
+            }
+        </script>
+    </body>
+</html>
