@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Wild Jungle Explorer</title>
+
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body { 
+      position: relative; 
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+   
+    .adventure-slider {
+      height: 250px;
+      text-align: center;
+      padding: 90px 30px 0;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+    .bg-canopy { background: linear-gradient(135deg, #1e4620, #38703b); }
+    .bg-stream { background: linear-gradient(135deg, #1f4068, #162447); }
+    .bg-midnight { background: linear-gradient(135deg, #1b1a17, #2c061f); }
+
+    /* Unique Content Section Styling */
+    .safari-zone {
+      padding: 90px 25px;
+      min-height: 400px;
+      border-radius: 8px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    #rainforest { background-color: #f1f9f1; border-left: 6px solid #28a745; }
+    #river { background-color: #f0f4f8; border-left: 6px solid #007bff; }
+    #night { background-color: #f5f3f7; border-left: 6px solid #6f42c1; }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target="#safariTrackerNav" data-offset="70">
+
+ 
+  <div id="safariCarousel" class="carousel slide" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#safariCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#safariCarousel" data-slide-to="1"></li>
+      <li data-target="#safariCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active adventure-slider bg-canopy">
+        🌳 Deep Rainforest Expedition
+      </div>
+
+      <div class="carousel-item adventure-slider bg-stream">
+        🛶 Amazon River Cruise
+      </div>
+
+      <div class="carousel-item adventure-slider bg-midnight">
+        🐆 Twilight Wildlife Safari
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#safariCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#safariCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+  
+  <nav id="safariTrackerNav" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top shadow">
+    <a class="navbar-brand font-weight-bold text-success" href="#">🐾 Expedition Hub</a>
+    
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#rainforest">Rainforest</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#river">River Journey</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#night">Night Safari</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="container">
+
+    <div id="rainforest" class="safari-zone">
+      <h2 class="text-success">🌳 Deep Rainforest Expedition</h2>
+      <hr>
+      <p class="lead">Venture into the heart of the ancient tropical canopy. Discover thousands of rare green plants, hear exotic birds chirping high above, and watch playful primates jump from branch to branch.</p>
+    </div>
+
+    <div id="river" class="safari-zone">
+      <h2 class="text-primary">🛶 Amazon River Cruise</h2>
+      <hr>
+      <p class="lead">Sail down deep, mysterious tropical waterways. Keep your eyes sharp for powerful predators resting near muddy banks, massive river turtles bathing in the sun, and schools of rare native fish swimming below your boat.</p>
+    </div>
+
+    <div id="night" class="safari-zone">
+      <h2 class="text-warning" style="color: #6f42c1 !important;">🐆 Twilight Wildlife Safari</h2>
+      <hr>
+      <p class="lead">Watch the wild environment completely transform after darkness falls. Listen closely to the loud chorus of nocturnal bugs, track glowing animal eyes through dark thickets, and catch quiet jungle cats hunting under a bright full moon.</p>
+    </div>
+
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
