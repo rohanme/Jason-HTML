@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            My Phone Contacts!
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mb-1">My Phone Contacts</h1>
+            <p class="text-muted mb-4">Introduction to objects in JavaScript</p>
+            <div class="card shadow-sm mb-3" style="max-width:400px;">
+            <div class="card-body">
+                <h5 class="card-title" style="color:red;">Contact Details</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="card-label d-block">Name:</span> <strong id="name">-</strong>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="card-label d-block">Phone:</span> <strong id="phone">-</strong>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="card-label d-block">School:</span> <strong id="school">-</strong>
+                    </li>
+                    <li class="list-group-item">
+                        <span class="card-label d-block">City:</span> <strong id="city">-</strong>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="card shadow-sm" style="max-width:400px;"> 
+            <div class="card-body">
+                <h6 style="color:blue;">JavaScript Object Used!</h6>
+                <pre id="code-display" class="bg-light p-3 rounded border mb-0"></pre>
+            </div>
+        </div>
+        <script>
+            var mycontact = {
+                name: "Cornelius the 5th",
+            phone: "647 641 4590",
+        school: "codingal",
+    city: "Manchester"            
+};
+var nameE1 = document.getElementById("name");
+var phoneE1 = document.getElementById("phone");
+nameE1.textContent=mycontact.name;
+phoneE1.textContent=mycontact.phone;
+var schoolE1 = document.getElementById("school");
+var cityE1 = document.getElementById("city");
+schoolE1.textContent=mycontact["school"];
+cityE1.textContent=mycontact["city"];
+var codeE1 = document.getElementById("code-display");
+codeE1.textContent=
+'var mycontact ={ \n' +
+'name: "Cornelius the 5th",\n' +
+'  phone: "647 641 4590",\n' +
+' school: "codingal", \n' +
+' city:"Manchester", \n' +
+'}; \n';
+        </script>
+    </body>
+</html>
