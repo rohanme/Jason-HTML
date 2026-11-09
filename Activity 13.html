@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Javascript Array Methods</title>
+    </head>
+    <body>
+        <p id="list1"></p>
+        <p id="list2"></p>
+        <p id="list3"></p>
+        <script>
+            var fruits = ["Bannana", "Orange", "Apple", "Mango", "Kiwi", "Lychee"];
+            document.getElementById("list1").innerHTML = fruits;
+            document.getElementById("list2").innerHTML = fruits.join(" - ");
+            fruits.pop()
+            fruits.pop()
+            document.getElementById("list3").innerHTML = fruits;
+        </script>
+    </body>
+</html>
