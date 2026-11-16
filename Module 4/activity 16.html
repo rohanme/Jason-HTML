@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Gamer Profile
+        </title>
+    </head>
+    <body>
+        <h1>My Gamer Profile</h1>
+        <p>Click the button below to view my gamer profile!</p>
+        <button onclick="displayprofile()">Show Profile</button>
+        <div>
+            Name: <span id="name"></span>
+
+        </div>
+         <div>
+            Score: <span id="score"></span>
+            
+        </div>
+         <div>
+           topscore : <span id="topscore"></span>
+            
+        </div>
+         <div>
+            Rank: <span id="rank"></span>
+            
+        </div>
+         <div>
+            teamname: <span id="teamname"></span>
+            
+        </div>
+         <div>
+            Greetings: <span id="greetings"></span>
+            
+        </div>
+         <div>
+            Stars: <span id="stars"></span>
+            
+        </div>
+         <div>
+            Bonus: <span id="bonus"></span>
+            
+        </div>
+        <script>
+            function displayprofile()
+            {
+                let name="Jason";
+                let score= 140;
+                let topscore= 237;
+                let bounuslevel=null;
+                let teamname;
+                let rank;
+                if(score>=100)
+            {
+                rank="Elite";
+            }
+            else if (score>50)
+            {
+                rank="Rookie";
+            }
+            else
+            {
+                rank="Noob";
+            
+            }
+            let stars="";
+            let count=1;
+            while(count<=25)
+            {
+                stars=stars+"⭐️";
+                count=count+1;
+            }
+            let hour=new Date().getHours();
+            let greetings;
+            if(hour<12)
+            {
+                greetings="Good Morning";
+            }
+            else if(hour<18)
+            {
+                greetings=" Good Afternoon";
+            }
+            else
+            {
+                greetings="Good evening";
+            }
+        
+            document.getElementById("rank").innerHTML=rank;
+             document.getElementById("name").innerHTML=name;
+              document.getElementById("score").innerHTML=score;
+               document.getElementById("topscore").innerHTML=topscore;
+                document.getElementById("teamname").innerHTML=teamname;
+                 document.getElementById("greetings").innerHTML=greetings;
+                  document.getElementById("stars").innerHTML=stars;
+                   document.getElementById("bonus").innerHTML=bonuslevel;
+        }
+        </script>
+    </body>
+</html>
