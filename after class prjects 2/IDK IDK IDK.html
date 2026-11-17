@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My character card!
+        </title>
+    </head>
+<body>
+
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="before"></p>
+<p id="after"></p>
+<p id="random"></p>
+
+<script>
+let info = {
+  name: "Jordan",
+  sport: "Soccer"
+};
+
+let colors = ["pink", "yellow", "purple", "orange", "grey"];
+
+document.getElementById("p1").innerHTML = "Name: " + info.name + " | Favourite sport: " + info.sport;
+document.getElementById("p2").innerHTML = "Pet: " + info.pet;
+document.getElementById("p3").innerHTML = "My favourite colour is " + colors[3];
+document.getElementById("before").innerHTML = "Before pop: " + colors.join(" * ") + " (" + colors.length + " colours)";
+
+colors.pop();
+
+document.getElementById("after").innerHTML = "After pop: " + colors.join(" * ") + " (" + colors.length + " colours)";
+document.getElementById("random").innerHTML = "Random colour: " + colors[Math.floor(Math.random() * colors.length)];
+</script>
+
+</body>
+</html>
