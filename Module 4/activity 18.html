@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Aquarium Page</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background-color: lightblue;
+      text-align: center;
+    }
+
+    h1 {
+      color: navy;
+    }
+
+    #zoo {
+      width: 400px;
+      border: 3px solid navy;
+      background-color: white;
+      margin: auto;
+      padding: 10px;
+    }
+
+    .zone {
+      border: 2px solid blue;
+      margin: 10px;
+      padding: 10px;
+      background-color: lightcyan;
+      text-align: left;
+    }
+
+    .fish {
+      font-weight: bold;
+      color: darkblue;
+    }
+
+    button {
+      background-color: navy;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    #output {
+      width: 400px;
+      border: 2px solid black;
+      background-color: white;
+      margin: 15px auto;
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>My Aquarium Project</h1>
+
+  <p>
+    Click the button to check the DOM nodes and update the fish tanks.
+  </p>
+
+  <div id="zoo">
+
+    <div class="zone" id="tank1">
+      <h2>Shark Tank</h2>
+      <p>Animal: <span class="fish">Great White Shark</span></p>
+    </div>
+
+    <div class="zone" id="tank2">
+      <h2>Turtle Tank</h2>
+      <p>Animal: <span class="fish">Sea Turtle</span></p>
+    </div>
+
+    <div class="zone" id="tank3">
+      <h2>Jellyfish Tank</h2>
+      <p>Animal: <span class="fish">Moon Jellyfish</span></p>
+    </div>
+
+  </div>
+
+  <button onclick="checkAquarium()">Check Aquarium</button>
+
+  <div id="output">
+    DOM info will show up here.
+  </div>
+
+  <script>
+    function checkAquarium() {
+
+      var zoo = document.getElementById("zoo");
+      var tank1 = document.getElementById("tank1");
+      var tank2 = document.getElementById("tank2");
+      var tank3 = document.getElementById("tank3");
+      var output = document.getElementById("output");
+
+      var parentName = tank1.parentNode.id;
+
+      var firstChild = zoo.children[0].id;
+      var secondChild = zoo.children[1].id;
+      var nextTank = tank1.nextElementSibling.id;
+      var prevTank = tank3.previousElementSibling.id;
+
+      var elemType = tank1.nodeType;
+      var textType = tank1.firstChild.nodeType;
+
+      tank1.style.backgroundColor = "lightyellow";
+      tank2.style.backgroundColor = "lightgreen";
+      tank3.style.backgroundColor = "pink";
+
+      tank1.querySelector("h2").innerHTML = "Shark Tank - Fed!";
+      tank2.querySelector("h2").innerHTML = "Turtle Tank - Fed!";
+      tank3.querySelector("h2").innerHTML = "Jellyfish Tank - Fed!";
+
+      output.innerHTML =
+        "<b>Parent and Children:</b><br>" +
+        "Parent of tank1: " + parentName + "<br>" +
+        "First child in zoo: " + firstChild + "<br>" +
+        "Second child in zoo: " + secondChild + "<br><br>" +
+
+        "<b>Siblings:</b><br>" +
+        "Next sibling of tank1: " + nextTank + "<br>" +
+        "Previous sibling of tank3: " + prevTank + "<br><br>" +
+
+        "<b>Node Types:</b><br>" +
+        "tank1 nodeType: " + elemType + "<br>" +
+        "tank1 firstChild nodeType: " + textType + "<br><br>" +
+
+        "<b>Done:</b><br>" +
+        "Updated all tank colors and titles!";
+    }
+  </script>
+
+</body>
+</html>
