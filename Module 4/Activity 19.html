@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Planet Cards
+        </title>
+    </head>
+    <body>
+        <h1>
+        My Planet Cards
+        </h1>
+        <p>
+            Using JS to build my planet cards
+        </p>
+        <div class="cards">
+            <div id="card1"></div>
+            <div id="card2"></div>
+            <div id="card3"></div>
+        </div>
+        <button onclick="showplanets()">Show Planets</button>
+        <script>
+            class Planet
+            {
+            constructor(planetname, fact)
+{
+    this.pname=planetname;
+    this.fact=fact;
+}
+            
+            describe()
+            {
+                return this.pname + " : " + this.fact;
+            }
+        }
+        function showplanets()
+        {
+            let p1= new Planet("Earth", "It is the only planet with life on it!");
+            let p2= new Planet("Mars", "Mars is also called the red planet due to its rich iron dioxide surface.");
+            let p3= new Planet("Saturn", "Saturn has a very big ring around it!");
+            document.getElementById("card1").innerHTML=p1.describe();
+             document.getElementById("card2").innerHTML=p2.describe();
+                          document.getElementById("card3").innerHTML=p3.describe();
+        }
+        </script>
+    </body>
+</html>
