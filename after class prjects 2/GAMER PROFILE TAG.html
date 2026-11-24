@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Vacation Countdown Checker</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: linear-gradient(to right, #a1c4fd, #c2e9fb); text-align: center; }
+    .card { width: 90%; max-width: 480px; background: white; border: 4px solid #0077b6; border-radius: 20px; margin: 30px auto; padding: 20px; }
+    h1 { color: #023e8a; }
+    button { background: #0077b6; color: white; border: none; border-radius: 25px; padding: 12px 25px; font-size: 18px; cursor: pointer; }
+    .box { background: #f0f8ff; border: 2px dashed #0077b6; border-radius: 12px; padding: 10px; margin-top: 12px; text-align: left; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✈️ My Vacation Countdown Checker</h1>
+    <button onclick="checkCountdown()">Check Countdown</button>
+    <div class="box"><h3>Missing Details</h3><p id="missing">Hotel: null<br>Flight time: undefined</p></div>
+    <div class="box"><h3>Greeting</h3><p id="greeting">Click the button for a greeting!</p></div>
+    <div class="box"><h3>Days Left</h3><p id="message">3 days to go!</p></div>
+    <div class="box"><h3>Countdown</h3><p id="countdown">Days left: 3<br>Days left: 2<br>Days left: 1<br>Vacation time!</p></div>
+  </div>
+  <script>
+    function checkCountdown() {
+      let destination = "Hawaii";
+      let daysLeft = 3;
+
+      let hotelName = null;
+      let flightTime;
+      document.getElementById("missing").innerHTML = "Hotel: " + hotelName + "<br>Flight time: " + flightTime;
+
+      let hour = new Date().getHours();
+      let greeting = "";
+      if (hour < 12) {
+        greeting = "Good morning! Get ready for " + destination;
+      } else if (hour < 17) {
+        greeting = "Good afternoon! Get ready for " + destination;
+      } else {
+        greeting = "Good evening! Get ready for " + destination;
+      }
+      document.getElementById("greeting").innerHTML = greeting;
+
+      let message = "";
+      if (daysLeft == 0) {
+        message = "Today is trip day!";
+      } else if (daysLeft == 1) {
+        message = "Tomorrow is trip day!";
+      } else {
+        message = daysLeft + " days to go!";
+      }
+      document.getElementById("message").innerHTML = message;
+
+      let count = daysLeft;
+      let output = "";
+      while (count > 0) {
+        output = output + "Days left: " + count + "<br>";
+        count--;
+      }
+      output = output + "Vacation time!";
+      document.getElementById("countdown").innerHTML = output;
+    }
+  </script>
+</body>
+</html>
